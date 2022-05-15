@@ -13,8 +13,23 @@ class _ChatPageState extends State<ChatPage> {
         title: Text('Forum'),
       ),
       body:
-      Center(
-        child: Text('forum'),
-      )
-  );
+        Column(
+          children: [
+            Row(
+                children: [
+                  Image.asset('Images/chat/chat0.png'),
+                  Text("""10.32pm - 
+handyManny: @AlexNg Where did you purchase the drills you used?
+
+
+
+gardeningQueen: This looks amazing! Thank you for the inspiration""")
+                          
+      ]
+            )]
+          ),
+      );
 }
+final List<Row> posts = [
+  Row()
+];

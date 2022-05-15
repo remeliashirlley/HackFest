@@ -1,16 +1,6 @@
-# hackfest_testing
+# Hackfest 2022- Flutter App
+A competitive event where participating teams will be developing a solution using technologies to solve one or more of the 17 United Nations Sustainable Development Goals (SDGs). 
 
-trying-out-flutter
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Addressing the SDGs
+1. Responsible Consumption and Production (12)
+2. Quality Eduction (4)
