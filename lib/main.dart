@@ -29,10 +29,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens[_currentIndex],
-      // body: IndexedStack(
-      //   children: screens,
-      // ),
+      // body: screens[_currentIndex],
+      body: IndexedStack(
+        index: _currentIndex,
+        children: screens,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color.fromRGBO(196, 69, 54, 1),
         selectedItemColor: Colors.white,
@@ -50,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.ondemand_video),
           ),
           BottomNavigationBarItem(
-            label: 'Marketplace',
+            label: 'Market',
             icon: Icon(Icons.shopping_bag),
           ),
           BottomNavigationBarItem(

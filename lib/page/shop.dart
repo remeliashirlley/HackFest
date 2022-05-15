@@ -1,4 +1,5 @@
 import  'package:flutter/material.dart';
+import 'dart:developer';
 
 class ShopPage extends StatefulWidget {
   @override
@@ -12,20 +13,41 @@ class _ShopPageState extends State<ShopPage> {
       backgroundColor: Color.fromRGBO(25, 114, 120, 1),
       title: Text('Marketplace'),
     ),
-      body: _buildGrid()
-
+      body: GridView.count(
+          crossAxisCount: 2,
+          padding: const EdgeInsets.all(4),
+          mainAxisSpacing: 4,
+          crossAxisSpacing: 4,
+          children: marketImages
+      )
   );
 }
 
-Widget _buildGrid() => GridView.count(
-    crossAxisCount: 2,
-    padding: const EdgeInsets.all(4),
-    mainAxisSpacing: 4,
-    crossAxisSpacing: 4,
-    children: _buildGridTileList(5));
+final marketImages = List<TextButton>.generate(
+    6, (i) =>
+    TextButton(
+      onPressed: () {},
+      child:  Image.asset('Images/Marketplace/pic$i.png')
+      )
+      );
 
-// The images are saved with names pic0.jpg, pic1.jpg...pic29.jpg.
-// The List.generate() constructor allows an easy way to create
-// a list when objects have a predictable naming pattern.
-List<Container> _buildGridTileList(int count) => List.generate(
-    count, (i) => Container(child: Image.asset('Images/Marketplace/pic$i.png')));
+class SecondRoute extends StatelessWidget {
+  const SecondRoute({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Second Route'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text('Go back!'),
+        ),
+      ),
+    );
+  }
+}
