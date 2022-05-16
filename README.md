@@ -15,9 +15,9 @@ We proceeded to code out our app according to what we have designed in our UI an
 As time was tight after a further improvement of design, our codes did not have the current UI implementation but still functions as it should.
 
 ## Challenges we ran into
-####It was challenging to decide on what we want in our application to properly aid in sustainability.
+It was challenging to decide on what we want in our application to properly aid in sustainability.
 <br>
-####As our group was relatively new to flutter and did not have experience using Android Studio, it took a longer time to get started on the coding of the application.
+As our group was relatively new to flutter and did not have experience using Android Studio, it took a longer time to get started on the coding of the application.
 
 ## Accomplishments that we're proud of
 We were able to learn new languages - flutter and dart and even a new programming platform - android studio. 
