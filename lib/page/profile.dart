@@ -19,7 +19,10 @@ class _ProfilePageState extends State<ProfilePage> {
             children: [
               CircleAvatar(
                 radius: 80.0,
-                backgroundImage: AssetImage('Images/amberlee.jpg'),
+                child: ClipRRect(
+                  child: Image.asset('Images/amberlee.jpg'),
+                  borderRadius: BorderRadius.circular(100.0),
+                ),
               ),
               SizedBox(
                 height: 10.0,
