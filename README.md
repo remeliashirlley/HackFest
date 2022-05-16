@@ -4,3 +4,4 @@ A competitive event where participating teams will be developing a solution usin
 ## Addressing the SDGs
 1. Responsible Consumption and Production (12)
 2. Quality Eduction (4)
+3. Sustainable Cities and Communities (11)
